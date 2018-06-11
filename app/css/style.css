@@ -29,10 +29,6 @@
     text-align: center;
 }
 
-.text-white {
-    color: #fff;
-}
-
 .bg-dark-blue {
     background-color: #263238;
 }
@@ -46,7 +42,7 @@
 }
 
 .bg-green {
-    background-color: #95c85a;
+    background-color: #8bc34a;
 }
 
 .bg-red {
@@ -63,6 +59,11 @@
 /* Default classes end*/
 
 /* Default components start*/
+.content-wrapper {
+    padding-bottom: 109px;
+}
+
+/* ========== Button start ========== */
 .btn {
     display: inline-block;
     line-height: 1;
@@ -78,6 +79,14 @@
            border-radius: 4px;
 }
 
+.large-btn {
+    padding: 16px 76px;
+    font-family: 'robotomedium', sans-serif;
+    font-size: .9375rem;
+}
+/* ========== Button end ========== */
+
+/* ========== Breadcrumb start ========== */
 .breadcrumb {
     padding: 45px 0;
 }
@@ -96,10 +105,11 @@
     padding: 0 5px;
     color: #8bc34a;
 }
+/* ========== Breadcrumb end ========== */
 
+/* ========== Aside start ========== */
 .aside-section {
     padding: 20px 30px 40px;
-    background-color: #fff;
 }
 
 .aside-section + .aside-section {
@@ -107,12 +117,101 @@
 }
 
 .aside-title {
+    margin-bottom: 25px;
     padding-bottom: 18px;
     font-family: 'robotobold', sans-serif;
     font-size: 1.25rem;
     border-bottom: 1px solid #dde3e8;
 }
+/* ========== Aside end ========== */
 
+/* ========== Card start ========== */
+.card {
+    -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+       -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+            box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+    -webkit-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+       -moz-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+            box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-description {
+    padding: 25px 20px;
+    border-bottom: 1px solid #e7ecf2;
+}
+
+.card-item-info {
+    font-family: 'robotomedium', sans-serif;
+}
+
+.card-item-info .card-title {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.card-item-info .card-category {
+    display: block;
+    font-size: .875rem;
+    color: #8bc34a;
+}
+
+.card-price {
+    font-family: 'robotobold', sans-serif;
+    font-size: 1.25rem;
+}
+
+.card-author-info {
+    padding: 16px 20px;
+}
+
+.card-author img {
+    width: 30px;
+    height: 30px;
+    margin-right: 14px;
+}
+
+.card-author span {
+    font-family: 'robotomedium', sans-serif;
+    font-size: .875rem;
+    color: #546e7a;
+}
+
+.product-rating {
+    margin-right: 9px;
+}
+
+.product-rating li {
+    display: inline-block;
+    font-size: .75rem;
+    color: #ffa726;
+}
+
+.product-reviews-count {
+    font-size: .75rem;
+}
+
+.product-reviews-count::before {
+    content: '(';
+    color: #b0bec5;
+}
+
+.product-reviews-count::after {
+    content: ')';
+    color: #b0bec5;
+}
+
+/* ========== Card end ========== */
 /* Default components end*/
 
 /* Custom styles start */
@@ -297,4 +396,155 @@
     color: #7c939f;
 }
 /* ========== Inner end ========== */
+
+/* ========== Aside section start ========== */
+.aside-section .default-chevron-list {
+    font-size: .9375rem;
+}
+
+.aside-section .default-chevron-list li + li {
+    margin-top: 23px;
+}
+
+.aside-section .fa-chevron-right {
+    margin-right: 12px;
+    font-size: .875rem;
+    color: #8bc34a;
+}
+
+.aside-section .category-item-count {
+    color: #90a4ae;
+}
+
+.aside-section .card {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    -moz-transition: none;
+    transition: none;
+    margin-bottom: 0;
+}
+
+.aside-section .card + .card {
+    padding-top: 26px;
+    border-top: 1px solid #dde3e8;
+}
+
+.aside-section .card:hover {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+.aside-section .card-description {
+    padding: 20px 0 0;
+    border-bottom: none;
+}
+
+.aside-section .card-title {
+    font-family: 'robotobold',sans-serif;
+    margin-bottom: 10px;
+}
+
+.aside-section .card-price {
+    font-size: 1rem;
+}
+
+.aside-section .card-author-info {
+    padding: 16px 0 27px;
+}
+
+.aside-section .product-rating {
+    margin-right: 0;
+}
+
+.aside-section .btn {
+    margin-top: 16px;
+}
+/* ========== Aside section end ========== */
+
+/* ========== View Controls start ========== */
+.view-controls {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.sort-wrap {
+    font-size: .875rem;
+    color: #707070;
+}
+
+.sort-wrap i:hover {
+    color: #455a64;
+}
+
+.sort-wrap .sort-name {
+    margin: 0 12px;
+}
+
+.sort-wrap .fa-sort {
+    font-size: 1.125rem;
+}
+
+.view-wrap i {
+    color: #90a4ae;
+}
+
+.view-wrap i:hover {
+    color: #8bc34a;
+}
+
+.view-wrap i + i {
+    margin-left: 12px;
+}
+/* ========== View Controls end ========== */
+
+/* ========== All items wrap start ========== */
+.all-items-wrap .card {
+    margin-bottom: 30px;
+}
+/* ========== All items wrap end ==========  */
+
+/* ========== Page Navigation start ========== */
+.page-navigation {
+    margin-top: 30px;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination li + li {
+    margin-left: 8px;
+}
+
+.pagination a {
+    display: inline-block;
+    width: 43px;
+    height: 38px;
+    font-family: 'robotomedium', sans-serif;
+    line-height: 38px;
+    text-align: center;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+       -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+            box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+}
+
+.pagination li.active a {
+    color: #fff;
+    background-color: #e74c3c;
+}
+
+.pagination a:hover {
+    -webkit-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+       -moz-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+            box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+}
+/* ========== Page Navigation end ========== */
 /* Custom styles end */
+
+
+  
