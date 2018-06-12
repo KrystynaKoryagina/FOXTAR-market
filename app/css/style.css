@@ -63,15 +63,18 @@
     padding: 120px 0;
 }
 
-.content-wrapper {
-    padding-bottom: 109px;
-}
-
 .title {
     margin-bottom: 56px;
     font-family: 'robotobold', sans-serif;
     font-size: 2.25rem;
 }
+
+.fas.fa-chevron-right {
+    margin-right: 12px;
+    font-size: .875rem;
+    color: #8bc34a;
+}
+
 /* ========== Button start ========== */
 .btn {
     display: inline-block;
@@ -89,7 +92,7 @@
 }
 
 .large-btn {
-    padding: 16px 76px;
+    padding: 16px 20px;
     font-family: 'robotomedium', sans-serif;
     font-size: .9375rem;
 }
@@ -118,7 +121,7 @@
 
 /* ========== Aside start ========== */
 .aside-section {
-    padding: 20px 30px 40px;
+    padding: 20px 30px 30px;
 }
 
 .aside-section + .aside-section {
@@ -207,6 +210,7 @@
 }
 
 .product-reviews-count {
+    margin-top: 5px;
     font-size: .75rem;
 }
 
@@ -219,7 +223,6 @@
     content: ')';
     color: #b0bec5;
 }
-
 /* ========== Card end ========== */
 /* Default components end*/
 
@@ -406,7 +409,13 @@
 }
 /* ========== Inner end ========== */
 
-/* ========== Aside section start ========== */
+/* ========== All-items-wrap start ========== */
+.all-items-wrap {
+    padding-bottom: 109px;
+}
+/* ========== All-items-wrap end ========== */
+
+/* ========== All-items-wrap Aside section start ========== */
 .aside-section .default-chevron-list {
     font-size: .9375rem;
 }
@@ -415,17 +424,24 @@
     margin-top: 23px;
 }
 
-.aside-section .fa-chevron-right {
-    margin-right: 12px;
-    font-size: .875rem;
-    color: #8bc34a;
-}
-
 .aside-section .category-item-count {
     color: #90a4ae;
 }
 
-.aside-section .card {
+.aside-section.price-range-section .aside-title {
+    margin-bottom: 15px;
+}
+
+.aside-section.price-range-section .btn {
+    margin-top: 50px;
+}
+
+.aside-section.price-range-section .btn span {
+    margin-left: 10px;
+}
+
+.all-items-wrap .aside-section .card {
+    margin-bottom: 27px;
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
             box-shadow: none;
@@ -433,46 +449,50 @@
     -o-transition: none;
     -moz-transition: none;
     transition: none;
-    margin-bottom: 0;
 }
 
-.aside-section .card + .card {
+.all-items-wrap .aside-section .card + .card {
     padding-top: 26px;
     border-top: 1px solid #dde3e8;
 }
 
-.aside-section .card:hover {
+.all-items-wrap .aside-section .card:hover {
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
             box-shadow: none;
 }
 
-.aside-section .card-description {
-    padding: 20px 0 0;
+.all-items-wrap .aside-section .card-description {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 0;
     border-bottom: none;
 }
 
-.aside-section .card-title {
+.all-items-wrap .aside-section .card-title {
     font-family: 'robotobold',sans-serif;
     margin-bottom: 10px;
 }
 
-.aside-section .card-price {
+.all-items-wrap .aside-section .card-price {
+    margin-top: 5px;
     font-size: 1rem;
 }
 
-.aside-section .card-author-info {
-    padding: 16px 0 27px;
+.all-items-wrap .aside-section .card-author-info {
+    padding: 0;
 }
 
-.aside-section .product-rating {
+.all-items-wrap .aside-section .product-rating {
     margin-right: 0;
 }
 
 .aside-section .btn {
+    width: 100%;
     margin-top: 16px;
+    text-align: center;
 }
-/* ========== Aside section end ========== */
+/* ========== All-items-wrap Aside section end ========== */
 
 /* ========== View Controls start ========== */
 .view-controls {
@@ -510,14 +530,14 @@
 }
 /* ========== View Controls end ========== */
 
-/* ========== All items wrap start ========== */
+/* ========== All items wrap Card start ========== */
 .all-items-wrap .card {
     margin-bottom: 30px;
 }
-/* ========== All items wrap end ==========  */
+/* ========== All items wrap Card end ==========  */
 
-/* ========== Page Navigation start ========== */
-.page-navigation {
+/* ========== Pagination start ========== */
+.pagination-wrap {
     margin-top: 30px;
 }
 
@@ -526,7 +546,7 @@
 }
 
 .pagination li + li {
-    margin-left: 8px;
+    margin-left: 5px;
 }
 
 .pagination a {
@@ -540,6 +560,10 @@
     -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
        -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
             box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+    -webkit-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    transition: all .1s ease-in;
 }
 
 .pagination li.active a {
@@ -552,7 +576,7 @@
        -moz-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
             box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
 }
-/* ========== Page Navigation end ========== */
+/* ========== Pagination end ========== */
 /* Custom styles end */
 
 
