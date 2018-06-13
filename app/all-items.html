@@ -34,11 +34,28 @@
                 <!-- /.need-help -->
                 <div class="user-controls d-flex align-items-center">
                     <div class="dropdown-item">
-                        <div class="dropdown-control d-flex">
+                        <div class="dropdown-control d-flex" id="dropdownMenuLink" data-toggle="dropdown">
                             <i class="far fa-bell mx-auto my-auto"></i>
                             <span class="notify-count bg-yellow">8</span>
                         </div>
                         <!-- /.dropdown-control -->
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                            <a href="#" class="dropdown-notify-item d-flex">
+                                <div class="notify-item-avatar">
+                                    <img src="img/notify-avatar.png" alt="">
+                                </div>
+                                <!-- /.notify-item-avatar -->
+                                <div class="notify-item-info">
+                                    <h6>Need WP Help!</h6>
+                                    <span class="notify-date">01 Dec, 2016</span>
+                                    <!-- /.notify-date -->
+                                </div>
+                                <!-- /.notify-item-info -->
+                                <i class="far fa-bell ml-auto"></i>
+                            </a>
+                            <!-- /.dropdown-notify-item -->
+                        </div>
+                        <!-- dropdown-menu -->
                     </div>
                     <!-- /.dropdown-item -->
                     <div class="dropdown-item">
@@ -272,7 +289,7 @@
                                     <!-- /.card-author-info -->
                                 </div>
                                 <!-- /.card -->
-                                <a href="" class="btn large-btn bg-green">View All</a>
+                                <a href="#" class="btn large-btn bg-green">View All</a>
                             </div>
                             <!-- /.aside-section -->
                         </aside>
@@ -785,6 +802,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Ion range slider -->
