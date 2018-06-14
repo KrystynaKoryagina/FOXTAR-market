@@ -268,9 +268,10 @@
 
 .dropdown-menu {
     position: absolute;
-    right: 0;
+    top: 100% !important;
     display: none;
     width: 268px;
+    margin-top: -3px;
     z-index: 999;
     background-color: #fff;
     border: 1px solid #d3d3d3;
