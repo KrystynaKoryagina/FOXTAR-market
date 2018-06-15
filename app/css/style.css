@@ -53,6 +53,10 @@
     background-color: #fff;
 }
 
+.bg-marengo {
+    background-color: #455a64;
+}
+
 .bg-light-grey {
     background-color: #f8f8f8;
 }
@@ -552,7 +556,7 @@
 }
 /* ========== Inner end ========== */
 
-/* ==========  Why-choose-foxtar start ========== */
+/* ==========  Why choose foxtar start ========== */
 .why-choose-foxtar .title {
     margin-bottom: 80px;
 }
@@ -569,7 +573,7 @@
 .advantage-title:hover {
     color: #8bc34a;
 }
-/* ==========  Why-choose-foxtar end========== */ 
+/* ==========  Why choose foxtar end========== */ 
 
 /* ==========  Tutorials start========== */ 
 .tutorials-item {
@@ -587,13 +591,13 @@
 }
 /* ==========  Tutorials end========== */ 
 
-/* ========== All-items-wrap start ========== */
+/* ========== All items wrap start ========== */
 .all-items-wrap {
     padding-bottom: 109px;
 }
-/* ========== All-items-wrap end ========== */
+/* ========== All items wrap end ========== */
 
-/* ========== All-items-wrap Aside section start ========== */
+/* ========== Aside section start ========== */
 .aside-section .default-chevron-list {
     font-size: .9375rem;
 }
@@ -669,12 +673,26 @@
     margin-right: 0;
 }
 
-.aside-section .btn {
+.all-items-wrap .aside-section .btn {
     width: 100%;
     margin-top: 16px;
     text-align: center;
 }
-/* ========== All-items-wrap Aside section end ========== */
+
+.product-info-list li {
+    font-family: 'robotomedium', sans-serif;
+    font-size: .875rem;
+} 
+
+.product-info-list li + li {
+    margin-top: 20px;
+}
+
+.product-info-list li span {
+    font-family: 'robotoregular', sans-serif;
+    color: #70838d;
+}
+/* ========== Aside section end ========== */
 
 /* ========== View Controls start ========== */
 .view-controls {
@@ -712,11 +730,11 @@
 }
 /* ========== View Controls end ========== */
 
-/* ========== All items wrap Card start ========== */
+/* ========== Card start ========== */
 .all-items-wrap .card {
     margin-bottom: 30px;
 }
-/* ========== All items wrap Card end ==========  */
+/* ========== Card end ==========  */
 
 /* ========== Pagination start ========== */
 .pagination-wrap {
@@ -759,6 +777,46 @@
             box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
 }
 /* ========== Pagination end ========== */
+
+/* ========== Product baner start ========== */
+.product-baner {
+    padding: 15px;
+}
+
+.product-baner img {
+    width: 100%;
+}
+/* ========== Product baner end ========== */
+
+/* ========== Product description start ========== */
+.description-title {
+    margin-top: 37px;
+    margin-bottom: 25px;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 1.875rem;
+}
+
+.description-text {
+    color: #707070;
+}
+/* ========== Product description end ========== */
+
+/* ========== Product links start ========== */
+.product-links {
+    margin-top: 45px;
+}
+
+.product-btn {
+    padding: 20px 25px;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 1rem;
+}
+
+.product-btn + .product-btn {
+    margin-left: 18px;
+}
+/* ========== Product links end ========== */
+
 /* Custom styles end */
 
 
