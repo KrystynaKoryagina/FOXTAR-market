@@ -107,10 +107,13 @@
     color: #b0bec5;
 }
 
-.fas.fa-chevron-right {
-
+.fa-chevron-right {
     font-size: .875rem;
     color: #8bc34a;
+}
+
+.default-chevron-list .fa-chevron-right {
+    margin-right: 13px;
 }
 
 /* ========== Button start ========== */
@@ -468,7 +471,7 @@
     margin-top: 20px;
 }
 
-.dropdown-menu.dropdown-menu-list .fas.fa-chevron-right {
+.dropdown-menu.dropdown-menu-list .fa-chevron-right {
     margin-right: 10px;
 }
 
@@ -624,10 +627,6 @@
 
 .aside-section .default-chevron-list li + li {
     margin-top: 23px;
-}
-
-.aside-section .default-chevron-list .fas.fa-chevron-right {
-    margin-right: 13px;
 }
 
 .aside-section .btn {
@@ -859,6 +858,79 @@
 }
 /* ========== Product links end ========== */
 
+/* ========== Product tabs start ========== */
+.product-tabs {
+    margin-top: 55px;
+    margin-bottom: 52px;
+}
+
+.nav-item {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.nav-item + .nav-item {
+    border-left: 1px solid #dfdfdf;
+}
+
+.nav-link {
+    position: relative;
+    display: block;
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    height: 0;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.nav-link.active::after {
+    height: 3px;
+    background-color: #8bc34a;
+}
+
+.tab-pane {
+    display: none;
+    padding: 35px 35px 65px;
+}
+
+.tab-pane.show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tab-pane .default-chevron-list + .default-chevron-list {
+    margin-left: 50px;
+}
+
+.tab-pane .default-chevron-list li + li {
+    margin-top: 20px;
+}
+
+.tab-pane .default-chevron-list .fa-chevron-right {
+    font-size: 1rem;
+}
+
+.tab-pane .default-chevron-list li span {
+    color: #707070;
+}
+/* ========== Product tabs end ========== */
 /* Custom styles end */
 
 
