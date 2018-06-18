@@ -210,7 +210,7 @@
 
 .card-item-info .card-title {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
 }
 
 .card-item-info .card-category {
@@ -579,6 +579,58 @@
 }
 /* ========== Inner end ========== */
 
+/* ========== Newest products start ========== */
+
+.newest-products-tabs .nav-item + .nav-item {
+    margin-left: 6px;
+}
+
+.newest-products-tabs .nav-link {
+    display: block;
+    padding: 15px 25px;
+    font-family: 'robotomedium', sans-serif;
+    font-size: .875rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.newest-products-tabs .nav-link.active {
+    color: #fff;
+    background-color: #e74c3c;
+    -webkit-box-shadow: 0 2px 5px rgba(202, 215, 228, .75);
+       -moz-box-shadow: 0 2px 5px rgba(202, 215, 228, .75);
+            box-shadow: 0 2px 5px rgba(202, 215, 228, .75);
+}
+
+.newest-products-tabs .tab-content {
+    margin-top: 59px;
+}
+
+.newest-products-tabs .tab-pane {
+    display: none;
+}
+
+.newest-products-tabs .tab-pane.show {
+    display: block;
+}
+
+.newest-products-tabs .card {
+    margin-bottom: 30px;
+}
+
+.newest-products-tabs .card-description {
+    padding: 25px 30px;
+}
+
+.newest-products-tabs .card-item-info .card-title {
+    font-size: 1.125rem;
+}
+
+.newest-products-tabs .card-author-info {
+    padding: 20px 30px;
+}
+/* ========== Newest products end ========== */
+
 /* ==========  Why choose foxtar start ========== */
 .why-choose-foxtar .title {
     margin-bottom: 80px;
@@ -870,7 +922,7 @@
     margin-bottom: 52px;
 }
 
-.nav-item {
+.product-tabs .nav-item {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
        -moz-box-flex: 1;
@@ -878,19 +930,25 @@
             flex-grow: 1;
 }
 
-.nav-item + .nav-item {
+.product-tabs .nav-item + .nav-item {
     border-left: 1px solid #dfdfdf;
 }
 
-.nav-link {
+.product-tabs .nav-link {
     position: relative;
     display: block;
     padding: 20px 10px;
+    font-family: 'robotomedium', sans-serif;
     text-align: center;
+    color: #70838d;
     border-bottom: 1px solid #dfdfdf;
 }
 
-.nav-link::after {
+.product-tabs .nav-link.active {
+    color: #263238;
+}
+
+.product-tabs .nav-link::after {
     content: "";
     position: absolute;
     left: -1px;
@@ -903,17 +961,17 @@
     transition: all .2s ease-in;
 }
 
-.nav-link.active::after {
+.product-tabs .nav-link.active::after {
     height: 3px;
     background-color: #8bc34a;
 }
 
-.tab-pane {
+.product-tabs .tab-pane {
     display: none;
     padding: 35px 35px 65px;
 }
 
-.tab-pane.show {
+.product-tabs .tab-pane.show {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -921,19 +979,19 @@
     display: flex;
 }
 
-.tab-pane .default-chevron-list + .default-chevron-list {
+.product-tabs .tab-pane .default-chevron-list + .default-chevron-list {
     margin-left: 50px;
 }
 
-.tab-pane .default-chevron-list li + li {
+.product-tabs .tab-pane .default-chevron-list li + li {
     margin-top: 20px;
 }
 
-.tab-pane .default-chevron-list .fa-chevron-right {
+.product-tabs .tab-pane .default-chevron-list .fa-chevron-right {
     font-size: 1rem;
 }
 
-.tab-pane .default-chevron-list li span {
+.product-tabs .tab-pane .default-chevron-list li span {
     color: #707070;
 }
 /* ========== Product tabs end ========== */
