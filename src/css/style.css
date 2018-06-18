@@ -774,6 +774,12 @@
 }
 /* ========== Pagination end ========== */
 
+/* ========== Product details wrap start ========== */
+.product-details-wrap {
+    padding-bottom: 122px;
+}
+/* ========== Product details wrap end ========== */
+
 /* ========== Product baner start ========== */
 .product-baner {
     padding: 15px;
@@ -879,6 +885,44 @@
     color: #707070;
 }
 /* ========== Product tabs end ========== */
+
+/* ========== More product start ========== */
+.more-product {
+    padding: 20px 27px;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 1.125rem;
+}
+/* ========== More product start ========== */
+
+/* ========== product-details-wrap card start ========== */
+.product-details-wrap .card {
+    margin-top: 28px;
+}
+
+.product-details-wrap .card-img img {
+    max-width: 100%;
+}
+
+.product-details-wrap .card-description {
+    padding: 16px 20px 7px;
+    border-bottom: none;
+}
+
+.product-details-wrap .card-item-info .card-title {
+    font-size: .875rem;
+    margin-bottom: 2px; 
+}
+
+.product-details-wrap .card-item-info .card-category {
+    font-family: 'robotoregular', sans-serif;
+    font-size: .75rem;
+}
+
+.product-details-wrap .card-price {
+    font-size: 1.125rem;
+}
+
+/* ========== product-details-wrap card end ========== */
 /* Custom styles end */
 
 
