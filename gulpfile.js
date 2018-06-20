@@ -4,6 +4,8 @@ const autoprefixer = require('gulp-autoprefixer'); // проставляет в�
 const rename = require('gulp-rename'); // переименовывает файлы
 const minifycss = require('gulp-cssmin'); // минимизирует css
 const tinypng = require('gulp-tinypng'); // оптимизирует картинки
+const spritesmith = require('gulp.spritesmith');
+const merge = require('merge-stream');
 
 gulp.task('css', function() {
     return gulp.src('src/css/**/*.css')
@@ -26,7 +28,27 @@ gulp.task('tinypng', function() {
         .pipe(gulp.dest('app/img/'));
 })
 
-gulp.task('watch', ['css', 'cssmin'] ,function() {
+gulp.task('sprite', function() {
+    let spriteData = gulp.src('src/sprite/*.png')
+        .pipe(spritesmith({ // настройка спрайта
+            imgName: 'sprite.png',
+            cssName: 'sprite.css',
+            imgPath: '../img/sprite.png'
+        }));
+
+    let imgStream = spriteData.img
+        .pipe(gulp.dest('app/img/'));
+
+    let cssStream = spriteData.css
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('app/css/'));
+    return merge(imgStream, cssStream);
+})
+gulp.task('watch', ['css', 'cssmin', 'sprite'] ,function() {
     gulp.watch('src/css/**/*.css', ['css']);
     gulp.watch('app/css/style.css', ['cssmin']);
+    gulp.watch('src/sprite/*.png', ['sprite']);
 });
