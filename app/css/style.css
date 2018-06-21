@@ -111,6 +111,14 @@
     color: #b0bec5;
 }
 
+.default-chevron-list {
+    font-size: .9375rem;
+}
+
+.default-chevron-list li + li {
+    margin-top: 23px;
+}
+
 .fa-chevron-right {
     font-size: .875rem;
     color: #8bc34a;
@@ -746,14 +754,6 @@
 /* ========== All items wrap end ========== */
 
 /* ========== Aside section start ========== */
-.aside-section .default-chevron-list {
-    font-size: .9375rem;
-}
-
-.aside-section .default-chevron-list li + li {
-    margin-top: 23px;
-}
-
 .aside-section .btn {
     width: 100%;
     text-align: center;
@@ -886,6 +886,29 @@
     margin-right: 7px;
 }
 
+.product-author-info {
+    margin-bottom: 25px;
+}
+
+.product-author {
+    margin-left: 15px;
+}
+
+.product-author span {
+    font-family: 'robotobold', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1em;
+}
+
+.profile-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 10px;
+    font-size: .8125rem;
+    line-height: 1em;
+    color: #707070;
+    border: 1px solid #d5d5d5;
+}
 
 .aside-section.sales-section {
     padding-bottom: 20px;
@@ -1215,11 +1238,11 @@
 }
 
 .contact-item i.fa-phone {
-    transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
+       -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg);
 }
 
 .contact-item span {
@@ -1227,6 +1250,102 @@
     font-size: .875rem;
     line-height: 1.71em;
     color: #fff;
+}
+
+.footer-list {
+    margin-left: 30px;
+}
+
+.footer-top .default-chevron-list {
+    color: #b7c3c8;
+}
+
+.footer-top .default-chevron-list .fa-chevron-right {
+    font-size: 1.125rem;
+}
+
+.footer-sprite-wrap .icon + .icon {
+    margin-left: 3px;
+}
+
+.subscribe-form-wrapper {
+    margin-top: 40px;
+}
+
+.subscribe-form-wrapper .form-title {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.subscribe-form {
+    display: inline-block;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238));
+    background: -webkit-linear-gradient(top, #000 0%, #263238 100%);
+    background: -moz-linear-gradient(top, #000 0%, #263238 100%);
+    background: -o-linear-gradient(top, #000 0%, #263238 100%);
+    background: linear-gradient(to bottom, #000 0%, #263238 100%);
+    padding: 1px;
+}
+
+.subscribe-form #email {
+    padding: 13px 15px;
+    width: 216px;
+    height: 37px;
+    font-family: 'robotoregular', sans-serif;
+    font-size: .875rem;
+    color: #697378;
+    background-color: #2f3c43;
+}
+
+.subscribe-form #email::-webkit-input-placeholder {
+    font-size: .875rem;
+    color: #697378;
+}
+
+.subscribe-form #email:-moz-placeholder {
+    font-size: .875rem;
+    color: #697378;
+}
+
+.subscribe-form #email::-moz-placeholder {
+    font-size: .875rem;
+    color: #697378;
+}
+
+.subscribe-form #email:-ms-input-placeholder {
+    font-size: .875rem;
+    color: #697378;
+}
+
+.subscribe-form #email::-ms-input-placeholder {
+    font-size: .875rem;
+    color: #697378;
+}
+
+.subscribe-form #email::placeholder {
+    font-size: .875rem;
+    color: #697378;
+}
+
+.subscribe-form button {
+    padding: 9px 13px;
+    font-size: 1.15rem;
+    line-height: 1em;
+    color: #fff;
+    background-color: #8bc34a;
+}
+
+
+
+.footer-bottom {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.copy {
+    font-size: .9375rem;
+    color: #919699;
 }
 /* ========== Footer start ========== */
 /* Custom styles end */
