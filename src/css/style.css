@@ -202,6 +202,25 @@
     box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
 }
 
+.hot-product {
+    width: 63px;
+    height: 63px;
+    transform: rotate(45deg);
+    background-color: #8bc34a;
+    position: absolute;
+    left: -32px;
+    top: -32px;  
+    text-align: right;
+    line-height: 63px;
+    color: #fff;
+    font-size: .9rem;  
+}  
+
+.hot-product i {
+    transform: rotate(-45deg);
+    margin-right: 6px;
+}
+
 .card-img img {
     width: 100%;
 }
@@ -642,6 +661,57 @@
     margin-left: 12px;
 }
 /* ========== Newest products end ========== */
+
+/* ========== Trending products start ========== */
+.trending-products.default-section {
+    padding-bottom: 0;
+}
+
+.trending-products .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.trending-product-carousel {
+    padding-bottom: 205px;
+}
+
+.slick-list {
+    padding-bottom: 15px;
+    padding-left: 1px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 118px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots li + li {
+    margin-left: 7px;;
+}
+
+.slick-dots li button {
+    width: 15px;
+    height: 15px;
+    color: transparent;
+    border-radius: 50%;
+    border-top: 1px solid #b1b1b1;
+    background-color: #e8e8e8;
+}
+
+.slick-dots li.slick-active button {
+    border-top: 1px solid #8bc34a;
+    background-color: #8bc34a;
+}
+/* ========== Trending products end ========== */
+
+
 
 /* ==========  Why choose foxtar start ========== */
 .why-choose-foxtar .title {
