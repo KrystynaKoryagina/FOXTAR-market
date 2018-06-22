@@ -11,10 +11,13 @@
         hide_min_max: true
     });
 
+    // Init slider
     $('.trending-product-carousel').slick({
         arrows: false,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 7000
+        autoplaySpeed: 5000,
+        slidesToShow: 4,
+        slidesToScroll: 4
     });
 })(jQuery);

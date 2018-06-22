@@ -196,6 +196,7 @@
 
 /* ========== Card start ========== */
 .card {
+    margin-bottom: 30px;
     -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
        -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
             box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
@@ -660,20 +661,19 @@
 
 .newest-products-tabs .card {
     position: relative;
-    margin-bottom: 30px;
     overflow: hidden;
 }
 
-.newest-products-tabs .card-description {
-    padding: 25px 30px;
-}
-
-.newest-products-tabs .card-item-info .card-title {
-    font-size: 1.125rem;
-}
-
 .newest-products-tabs .card-author-info {
-    padding: 20px 30px;
+    padding: 20px 20px;
+}
+
+.newest-products-tabs .card-author img {
+    margin-right: 5px;
+}
+
+.newest-products-tabs .card-author span {
+    font-size: .75rem;
 }
 
 .items-btn-wrap {
@@ -706,18 +706,33 @@
     padding-bottom: 0;
 }
 
+.trending-product-carousel {
+    padding-bottom: 205px;
+}
+
 .trending-products .card {
     position: relative;
     overflow: hidden;
 }
 
-.trending-product-carousel {
-    padding-bottom: 205px;
+.trending-products .card-author-info {
+    padding: 20px 20px;
+}
+
+.trending-products .card-author img {
+    margin-right: 5px;
+}
+
+.trending-products .card-author span {
+    font-size: .75rem;
 }
 
 .slick-list {
-    padding-bottom: 15px;
-    padding-left: 1px;
+    margin: 0 -15px;
+}
+
+.slick-slide {
+    margin: 0 15px;
 }
 
 .slick-dots {
@@ -728,7 +743,7 @@
        -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
          -o-transform: translateX(-50%);
-            transform: translateX(-50%);
+            transform: translateX(-50%); 
 }
 
 .slick-dots li {
@@ -746,17 +761,18 @@
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    border-top: 1px solid #b1b1b1;
-    background-color: #e8e8e8;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, .2);
+       -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, .2);
+            box-shadow: inset 0 2px 2px rgba(0, 0, 0, .2);
 }
 
 .slick-dots li.slick-active button {
-    border-top: 1px solid #8bc34a;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
     background-color: #8bc34a;
 }
 /* ========== Trending products end ========== */
-
-
 
 /* ==========  Why choose foxtar start ========== */
 .why-choose-foxtar .title {
@@ -1065,12 +1081,6 @@
     margin-left: 12px;
 }
 /* ========== View Controls end ========== */
-
-/* ========== Card start ========== */
-.all-items-wrap .card {
-    margin-bottom: 30px;
-}
-/* ========== Card end ==========  */
 
 /* ========== Pagination start ========== */
 .pagination-wrap {
