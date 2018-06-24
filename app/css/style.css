@@ -309,6 +309,43 @@
     color: #b0bec5;
 }
 /* ========== Card end ========== */
+
+/* ========== Form start ========== */
+.head-title {
+    padding: 18px 33px;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.form-control {
+    width: 100%;
+    height: 40px;
+    padding: 0 17px;
+	border: 1px solid #dedede;
+	background-color: #f9f9f9;
+	font-family: 'robotoregular', sans-serif;
+	font-size: .9375rem;
+	line-height: 40px;
+	color: #707070;
+}
+
+.form-control:focus {
+    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.5);
+       -moz-box-shadow: 0 2px 3px rgba(0,0,0,.5);
+            box-shadow: 0 2px 3px rgba(0,0,0,.5);
+}
+
+textarea.form-control {
+    height: 148px;
+    resize: none;
+}
+
+.input-file-styler {
+    width: 100%;
+    height: 40px;
+}
+/* ========== Form end ========== */
 /* Default components end*/
 
 /* Custom styles start */
@@ -1290,6 +1327,38 @@
 }
 /* ========== product-details-wrap card end ========== */
 
+/* ========== Upload product start ========== */
+.form-body {
+    padding-top: 40px;
+    padding-bottom: 65px;
+}
+
+.form-body .row + .row {
+    margin-top: 20px;
+}
+
+.form-body label {
+    padding-left: 45px;
+    font-size: .9375rem;
+    color: #444;
+}
+
+.form-body label sup {
+    font-size: 1.1rem;
+    color: #8bc34a;
+}
+
+.form-body .btn {
+    margin-top: 22px;
+}
+
+.form-body .large-btn {
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: .9375rem;
+}
+/* ========== Upload product end ========== */
+
 /* ========== Footer start ========== */
 .footer-top {
     padding-top: 115px;
@@ -1429,8 +1498,6 @@
     color: #fff;
     background-color: #8bc34a;
 }
-
-
 
 .footer-bottom {
     padding-top: 25px;
