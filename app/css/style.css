@@ -795,6 +795,7 @@ textarea.form-control {
     width: 15px;
     height: 15px;
     color: transparent;
+    background-color: #e8e8e8;
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
