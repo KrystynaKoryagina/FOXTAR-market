@@ -130,7 +130,15 @@
 
 .icon {
     display: inline-block;
-  }
+}
+
+.mobile-aside-toggle {
+    display: none;
+}
+
+.close-mobile-aside {
+    display: none;
+}
 
 /* ========== Button start ========== */
 .btn {
@@ -346,6 +354,77 @@ textarea.form-control {
     height: 40px;
 }
 /* ========== Form end ========== */
+
+@media (max-width: 991px) {
+    .mobile-aside-toggle {
+        display: block;
+    }
+
+    .close-mobile-aside {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+        background-color: #000;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background: rgba(0, 0, 0, .7);
+        opacity: 0;
+    }
+
+    .mobile-aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        -webkit-transition: -webkit-transform .2s ease-in;
+        transition: -webkit-transform .2s ease-in;
+        -o-transition: -o-transform .2s ease-in;
+        -moz-transition: transform .2s ease-in, -moz-transform .2s ease-in;
+        transition: transform .2s ease-in;
+        transition: transform .2s ease-in, -webkit-transform .2s ease-in, -moz-transform .2s ease-in, -o-transform .2s ease-in;
+    }
+
+    .mobile-aside.left {
+        -webkit-transform: translateX(-100%);
+           -moz-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+             -o-transform: translateX(-100%);
+                transform: translateX(-100%);  
+    }
+
+    body.show-aside {
+        overflow-y: hidden;
+    }
+
+    .show-aside .overlay {
+        z-index: 998;
+        opacity: 1;
+    }
+
+    .show-aside .mobile-aside {
+        height: 100vh;
+        overflow-y: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .show-aside .mobile-aside.left {
+        -webkit-transform: translateX(0);
+           -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+             -o-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
 /* Default components end*/
 
 /* Custom styles start */
@@ -584,6 +663,14 @@ textarea.form-control {
 
 .header-nav a + a {
     margin-left: 40px;
+}
+
+@media(max-width: 991px) {
+    .user-controls {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0;
+    }
 }
 /* ========== Header end ========== */
 
