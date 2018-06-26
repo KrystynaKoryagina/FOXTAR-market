@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <!-- Bootstrap grid -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Slicknav styles -->
+    <link rel="stylesheet" href="css/slicknav.css">
     <!-- Ion range styles -->
     <link rel="stylesheet" href="css/ion.rangeSlider.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
@@ -34,7 +36,7 @@
                     <span><span>Need help?</span> Talk to an expert: <a href="tel:+61383766284">+61 3 8376 6284</a></span>
                 </div>
                 <!-- /.need-help -->
-                <div class="user-controls d-flex align-items-center justify-content-around justify-content-start">
+                <div class="user-controls d-flex flex-wrap align-items-center justify-content-around justify-content-xl-start">
                     <div class="dropdown-item">
                         <div class="dropdown-control d-flex" id="dropdownMenuLink" data-toggle="dropdown">
                             <i class="far fa-bell mx-auto my-auto"></i>
@@ -292,7 +294,7 @@
                 <!-- /.overlay -->
 
                 <div class="row">
-                    <div class="col-12 col-lg-3 mobile-aside left">
+                    <div class="col-12 col-md-6 col-lg-3 mobile-aside left">
                         <button class="close-mobile-aside"><i class="fas fa-times"></i></button>
                         <aside id="aside">
                             <div class="aside-section bg-white border-grey">
@@ -357,7 +359,7 @@
                                         <span class="card-price ml-auto">$40</span>
                                     </div>
                                     <!-- /.card-description -->
-                                    <div class="card-author-info d-flex">
+                                    <div class="card-author-info d-flex flex-lg-wrap">
                                         <a href="#" class="card-author d-flex align-items-center">
                                             <img src="img/user-avatar.png" alt="">
                                             <span>PsdBosS</span>
@@ -391,7 +393,7 @@
                                         <span class="card-price ml-auto">$20</span>
                                     </div>
                                     <!-- /.card-description -->
-                                    <div class="card-author-info d-flex">
+                                    <div class="card-author-info d-flex flex-lg-wrap">
                                         <a href="#" class="card-author d-flex align-items-center">
                                             <img src="img/user-avatar.png" alt="">
                                             <span>Mikc Art</span>
@@ -425,7 +427,7 @@
                                         <span class="card-price ml-auto">$12</span>
                                     </div>
                                     <!-- /.card-description -->
-                                    <div class="card-author-info d-flex">
+                                    <div class="card-author-info d-flex flex-lg-wrap">
                                         <a href="#" class="card-author d-flex align-items-center">
                                             <img src="img/user-avatar.png" alt="">
                                             <span>Greenta9</span>
@@ -449,7 +451,7 @@
                         </aside>
                         <!-- /#aside -->
                     </div>
-                    <!-- /.col-md-3 -->
+                    <!-- /.col-lg-3 -->
                     <div class="col-lg-9 col-12">
                         <div class="view-controls bg-white border-grey d-flex">
                             <div class="mobile-aside-toggle">
@@ -960,7 +962,7 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-item">
                             <div class="footer-title">
                                 <span>About Company</span>
@@ -983,8 +985,8 @@
                         </div>
                         <!-- /.footer-item -->
                     </div>
-                    <!-- /.col-md-3 -->
-                    <div class="col-md-3">
+                    <!-- /.col-xl-3 -->
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-item footer-list">
                             <div class="footer-title">
                                 <span>Join Our Community</span>
@@ -1016,8 +1018,8 @@
                         </div>
                         <!-- /.footer-item -->
                     </div>
-                    <!-- /.col-md-3 -->
-                    <div class="col-md-3">
+                    <!-- /.col-xl-3 -->
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-item footer-list">
                             <div class="footer-title">
                                 <span>Need Help?</span>
@@ -1049,8 +1051,8 @@
                         </div>
                         <!-- /.footer-item -->
                     </div>
-                    <!-- /.col-md-3 -->
-                    <div class="col-md-3">
+                    <!-- /.col-xl-3 -->
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-item">
                             <div class="footer-title">
                                 <span>Follow Us On</span>
@@ -1081,7 +1083,7 @@
                         </div>
                         <!-- /.footer-item -->
                     </div>
-                    <!-- /.col-md-3 -->
+                    <!-- /.col-xl-3 -->
                 </div>
                 <!-- /.row -->
             </div>
@@ -1089,10 +1091,13 @@
         </div>
         <!-- /.footer-top -->
         <div class="footer-bottom">
-            <div class="copy text-center">
-                <span>&copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+            <div class="container">
+                <div class="copy text-center">
+                    <span>&copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+                </div>
+                <!-- /.copy -->
             </div>
-            <!-- /.copy -->
+            <!-- /.container -->
         </div>
         <!-- /.footer-bottom -->
     </footer>
@@ -1104,6 +1109,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Slicknav -->
+    <script src="js/jquery.slicknav.min.js"></script>
     <!-- Ion range slider -->
     <script src="js/ion.rangeSlider.min.js"></script>
     <!-- Aside js -->

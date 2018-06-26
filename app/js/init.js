@@ -33,4 +33,12 @@
         });
     }
 
+    // Init slicknav
+    if($('.header-nav').length) {
+        $('.header-nav').slicknav({
+            appendTo: '.bottom-header .container',
+            label: ''
+        });
+    }
+
 })(jQuery);

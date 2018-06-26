@@ -358,6 +358,12 @@ textarea.form-control {
 @media (max-width: 991px) {
     .mobile-aside-toggle {
         display: block;
+        margin-right: 12px;
+        color: #707070;
+    }
+
+    .mobile-aside-toggle:hover {
+        color: #8bc34a;
     }
 
     .close-mobile-aside {
@@ -670,6 +676,34 @@ textarea.form-control {
         width: 100%;
         margin-top: 30px;
         margin-left: 0;
+    }
+
+    .bottom-header {
+        position: relative;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .need-help {
+        margin-top: 30px;
+        font-size: .875rem;
+    }
+
+    .dropdown-menu {
+        margin-top: 0;
+    }
+
+    .user-dropdown-control,
+    .user-controls .btn.small-btn {
+        margin-top: 30px;
     }
 }
 /* ========== Header end ========== */
@@ -1169,6 +1203,16 @@ textarea.form-control {
     font-family: 'robotoregular', sans-serif;
     color: #70838d;
 }
+
+@media (max-width: 1200px) {
+    .all-items-wrap .aside-section .card-title {
+        font-size: .875rem;
+    }
+    
+    .all-items-wrap .aside-section .card-price {
+        font-size: .875rem;
+    }
+}
 /* ========== Aside section end ========== */
 
 /* ========== View Controls start ========== */
@@ -1595,6 +1639,17 @@ textarea.form-control {
 .copy {
     font-size: .9375rem;
     color: #919699;
+}
+
+@media (max-width: 1200px) {
+    .footer-top {
+        padding-top: 65px;
+    }
+
+    .footer-item {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
 }
 /* ========== Footer start ========== */
 /* Custom styles end */
