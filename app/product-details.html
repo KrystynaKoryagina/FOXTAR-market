@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <!-- Bootstrap grid -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Slicknav styles -->
+    <link rel="stylesheet" href="css/slicknav.css">
     <!-- Ion range styles -->
     <link rel="stylesheet" href="css/ion.rangeSlider.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
@@ -23,7 +25,7 @@
 <body>
     <header id="header">
         <div class="top-header bg-white">
-            <div class="container d-flex align-items-center">
+            <div class="container d-flex align-items-center flex-wrap">
                 <div class="logo">
                     <a href="index.html">
                         <img src="img/logo.png" alt="">
@@ -34,7 +36,7 @@
                     <span><span>Need help?</span> Talk to an expert: <a href="tel:+61383766284">+61 3 8376 6284</a></span>
                 </div>
                 <!-- /.need-help -->
-                <div class="user-controls d-flex align-items-center">
+                <div class="user-controls d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <div class="dropdown-item">
                         <div class="dropdown-control d-flex" id="dropdownMenuLink" data-toggle="dropdown">
                             <i class="far fa-bell mx-auto my-auto"></i>
@@ -232,7 +234,10 @@
                         <!-- /.dropdown-menu -->
                     </div>
                     <!-- /.user-dropdown-control -->
-                    <button class="btn small-btn bg-red">Logout</button>
+                    <div class="header-btn-wrap">
+                        <button class="btn small-btn bg-red">Logout</button>
+                    </div>
+                    <!-- /.header-btn-wrap -->
                 </div>
                 <!-- /.user-controls -->
             </div>
@@ -242,16 +247,16 @@
         <div class="bottom-header bg-dark-blue">
             <div class="container">
                 <nav class="header-nav">
-                   <a href="index.html">Home</a>
-                   <a href="#">About</a>
-                   <a href="#">WordPress</a>
-                   <a href="#">Joomla</a>
-                   <a href="#">PSD</a>
-                   <a href="#">Plugins</a>
-                   <a href="#">Components</a>
-                   <a href="#">Pages</a>
-                   <a href="#">Contact</a>
-                   <a href="#">Help</a>
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">WordPress</a>
+                    <a href="#">Joomla</a>
+                    <a href="#">PSD</a>
+                    <a href="#">Plugins</a>
+                    <a href="#">Components</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Help</a>
                 </nav>
                 <!-- /.header-nav -->
             </div>
@@ -260,6 +265,7 @@
         <!-- /.bottom-header -->
     </header>
     <!-- /#header -->
+
     <main id="main">
         <div class="inner small-inner">
             <div class="container">
@@ -290,8 +296,16 @@
                     <li class="active">GT Builder Construction</li>
                 </ul>
                 <!-- /.breadcrumb -->
+
+                <div class="overlay"></div>
+                <!-- /.overlay -->
+
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-12 col-lg-9">
+                        <div class="mobile-aside-toggle">
+                            <i class="fab fa-elementor"></i>
+                        </div>
+                        <!-- /.mobile-aside-toggle -->
                         <div class="product-info-wrap">
                             <div class="product-baner bg-white border-grey">
                                 <img src="img/banner.jpg" alt="">
@@ -632,8 +646,9 @@
                         </div>
                         <!-- /.product-info-wrap -->
                     </div>
-                    <!-- /.col-md-9 -->
-                    <div class="col-md-3">
+                    <!-- /.col-lg-9 -->
+                    <div class="col-12 col-md-6 col-lg-3 mobile-aside right">
+                        <button class="close-mobile-aside"><i class="fas fa-times"></i></button>
                         <aside id="aside">
                             <div class="aside-section product-price-section bg-white border-grey">
                                 <h3 class="aside-title">Product Price</h3>
@@ -699,7 +714,7 @@
                         </aside>
                         <!-- /#aside -->
                     </div>
-                    <!-- /.col-md-3 -->
+                    <!-- /.col-lg-3 -->
                 </div>
                 <!-- /.row -->
             </div>
@@ -708,11 +723,12 @@
         <!-- /.content-wrapper -->
     </main>
     <!-- /#main -->
+
     <footer id="footer" class="bg-dark-blue">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-item">
                             <div class="footer-title">
                                 <span>About Company</span>
@@ -735,8 +751,8 @@
                         </div>
                         <!-- /.footer-item -->
                     </div>
-                    <!-- /.col-md-3 -->
-                    <div class="col-md-3">
+                    <!-- /.col-xl-3 -->
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-item footer-list">
                             <div class="footer-title">
                                 <span>Join Our Community</span>
@@ -768,8 +784,8 @@
                         </div>
                         <!-- /.footer-item -->
                     </div>
-                    <!-- /.col-md-3 -->
-                    <div class="col-md-3">
+                    <!-- /.col-xl-3 -->
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-item footer-list">
                             <div class="footer-title">
                                 <span>Need Help?</span>
@@ -801,8 +817,8 @@
                         </div>
                         <!-- /.footer-item -->
                     </div>
-                    <!-- /.col-md-3 -->
-                    <div class="col-md-3">
+                    <!-- /.col-xl-3 -->
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-item">
                             <div class="footer-title">
                                 <span>Follow Us On</span>
@@ -833,7 +849,7 @@
                         </div>
                         <!-- /.footer-item -->
                     </div>
-                    <!-- /.col-md-3 -->
+                    <!-- /.col-xl-3 -->
                 </div>
                 <!-- /.row -->
             </div>
@@ -841,10 +857,13 @@
         </div>
         <!-- /.footer-top -->
         <div class="footer-bottom">
-            <div class="copy text-center">
-                <span>&copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+            <div class="container">
+                <div class="copy text-center">
+                    <span>&copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+                </div>
+                <!-- /.copy -->
             </div>
-            <!-- /.copy -->
+            <!-- /.container -->
         </div>
         <!-- /.footer-bottom -->
     </footer>
@@ -858,6 +877,10 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Ion range slider -->
     <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- Slicknav -->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <!-- Aside js -->
+    <script src="js/aside.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
 </body>

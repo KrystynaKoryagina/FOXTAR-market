@@ -407,6 +407,16 @@ textarea.form-control {
                 transform: translateX(-100%);  
     }
 
+    .mobile-aside.right {
+        -webkit-transform: translateX(100%);
+           -moz-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+             -o-transform: translateX(100%);
+                transform: translateX(100%);
+        left: auto;
+        right: 0;
+    }
+
     body.show-aside {
         overflow-y: hidden;
     }
@@ -423,7 +433,7 @@ textarea.form-control {
         padding-bottom: 30px;
     }
 
-    .show-aside .mobile-aside.left {
+    .show-aside .mobile-aside {
         -webkit-transform: translateX(0);
            -moz-transform: translateX(0);
             -ms-transform: translateX(0);
@@ -649,7 +659,7 @@ textarea.form-control {
     color: #546e7a;
 }
 
-.user-controls .btn.small-btn {
+.header-btn-wrap {
     margin-left: 26px;
 }
 
@@ -693,17 +703,28 @@ textarea.form-control {
 
 @media (max-width: 576px) {
     .need-help {
+        width: 100%;
         margin-top: 30px;
         font-size: .875rem;
+    }
+
+    .user-dropdown-control {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+           -moz-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
     }
 
     .dropdown-menu {
         margin-top: 0;
     }
 
-    .user-dropdown-control,
-    .user-controls .btn.small-btn {
-        margin-top: 30px;
+    .user-dropdown-control .dropdown-menu {
+        margin-top: 0;
     }
 }
 /* ========== Header end ========== */
@@ -1204,7 +1225,7 @@ textarea.form-control {
     color: #70838d;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .all-items-wrap .aside-section .card-title {
         font-size: .875rem;
     }
@@ -1212,7 +1233,7 @@ textarea.form-control {
     .all-items-wrap .aside-section .card-price {
         font-size: .875rem;
     }
-}
+} */
 /* ========== Aside section end ========== */
 
 /* ========== View Controls start ========== */
