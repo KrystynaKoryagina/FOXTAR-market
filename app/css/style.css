@@ -355,7 +355,7 @@ textarea.form-control {
 }
 /* ========== Form end ========== */
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     .mobile-aside-toggle {
         display: block;
         margin-right: 12px;
@@ -1341,6 +1341,12 @@ textarea.form-control {
 .description-text {
     color: #707070;
 }
+
+@media (max-width: 576px) {
+    .description-title {
+        font-size: 1.25rem;
+    }
+}
 /* ========== Product description end ========== */
 
 /* ========== Product links start ========== */
@@ -1360,6 +1366,35 @@ textarea.form-control {
     color: #fff;
     text-align: center;
     line-height: 50px;
+}
+
+@media (max-width: 991px) {
+    .product-social {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-btn-wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .product-links .btn + .btn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .product-social {
+        width: 100%;
+        text-align: center;
+    }
 }
 /* ========== Product links end ========== */
 
@@ -1440,6 +1475,32 @@ textarea.form-control {
 
 .product-tabs .tab-pane .default-chevron-list li span {
     color: #707070;
+}
+
+@media (max-width: 767px) {
+    .product-tabs .nav-item {
+        width: 50%;
+    }
+
+    .product-tabs .tab-pane .default-chevron-list + .default-chevron-list {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-tabs .nav-item {
+        width: 100%;
+    }
+
+    .product-tabs .nav-item + .nav-item {
+        border-left: none;
+    }
+
+    .product-tabs .default-chevron-list {
+        width: 100%;
+        font-size: .8125rem;
+    }
 }
 /* ========== Product tabs end ========== */
 
@@ -1568,10 +1629,6 @@ textarea.form-control {
     color: #fff;
 }
 
-.footer-list {
-    margin-left: 30px;
-}
-
 .footer-top .default-chevron-list {
     color: #b7c3c8;
 }
@@ -1669,7 +1726,6 @@ textarea.form-control {
 
     .footer-item {
         margin-top: 50px;
-        margin-left: 30px;
     }
 }
 /* ========== Footer start ========== */
