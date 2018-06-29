@@ -1222,15 +1222,6 @@ textarea.form-control {
     color: #70838d;
 }
 
-/* @media (max-width: 1200px) {
-    .all-items-wrap .aside-section .card-title {
-        font-size: .875rem;
-    }
-    
-    .all-items-wrap .aside-section .card-price {
-        font-size: .875rem;
-    }
-} */
 /* ========== Aside section end ========== */
 
 /* ========== View Controls start ========== */
@@ -1515,6 +1506,10 @@ textarea.form-control {
 /* ========== product-details-wrap card end ========== */
 
 /* ========== Upload product start ========== */
+.upload-product-wrap {
+    padding-bottom: 107px;
+}
+
 .form-body {
     padding-top: 40px;
     padding-bottom: 65px;
@@ -1543,6 +1538,17 @@ textarea.form-control {
     padding-left: 35px;
     padding-right: 35px;
     font-size: .9375rem;
+}
+
+@media (max-width: 767px) {
+    .form-body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .form-body label {
+        padding-left: 0;
+    }
 }
 /* ========== Upload product end ========== */
 
