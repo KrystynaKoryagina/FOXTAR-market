@@ -405,6 +405,12 @@ textarea.form-control {
         transform: translateX(0);
     }
 }
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 2rem;
+    }
+}
 /* Default components end*/
 
 /* Custom styles start */
@@ -746,11 +752,17 @@ textarea.form-control {
     background-color: transparent;
     color: #7c939f;
 }
+
+@media (max-width: 576px) {
+    .inner h1 {
+        font-size: 2.5rem;
+    }
+}
 /* ========== Inner end ========== */
 
 /* ========== Newest products start ========== */
-.newest-products-tabs .nav-item + .nav-item {
-    margin-left: 6px;
+.newest-products-tabs .nav-item {
+    display: inline-block;
 }
 
 .newest-products-tabs .nav-link {
@@ -816,6 +828,24 @@ textarea.form-control {
 .items-btn-wrap .items-btn + .items-btn {
     margin-left: 12px;
 }
+
+@media (max-width: 767px) {
+    .newest-products-tabs .nav-item {
+        width: 30%;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .newest-products-tabs .nav-item {
+        width: 100%;
+    }
+
+    .items-btn-wrap .items-btn + .items-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
 /* ========== Newest products end ========== */
 
 /* ========== Trending products start ========== */
@@ -880,6 +910,13 @@ textarea.form-control {
     box-shadow: none;
     background-color: #8bc34a;
 }
+
+@media (max-width: 767px) {
+    .slick-dots {
+        width: 100%;
+        text-align: center;
+    }
+}
 /* ========== Trending products end ========== */
 
 /* ==========  Why choose foxtar start ========== */
@@ -899,6 +936,12 @@ textarea.form-control {
 .advantage-title:hover {
     color: #8bc34a;
 }
+
+@media (max-width: 991px) {
+    .advantage-item {
+        margin-bottom: 30px;
+    }
+}
 /* ==========  Why choose foxtar end========== */ 
 
 /* ========== Become-a-author start ========== */
@@ -910,13 +953,13 @@ textarea.form-control {
     position: absolute;
     top: 50%;
     left: 50%;
-    max-width: 655px;
-    padding: 70px 60px;
+    padding: 70px 58px;
     transform: translate(-50%, -50%);
 }
 
 .become-author-text {
-    font-size: 1.875rem;
+    max-width: 260px;
+    font-size: 1.6rem;
     line-height: 1.2em;
     color: #fff;
 }
@@ -931,6 +974,39 @@ textarea.form-control {
     font-size: 1.125rem;
     white-space: nowrap;
     line-height: 1em;
+}
+
+@media (max-width: 1200px) {
+    .become-a-author-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .become-author-text {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .become-author-text {
+        font-size: 1.1rem;
+    }
+
+    .author-register-btn {
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .become-a-author img {
+        display: none;
+    }
+
+    .become-a-author-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 /* ========== Become-a-author end ========== */
@@ -948,6 +1024,12 @@ textarea.form-control {
 .tutorials-name {
     font-family: 'robotobold', sans-serif;
     font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    .tutorials-item {
+        margin-bottom: 30px;
+    }
 }
 /* ==========  Tutorials end========== */ 
 
