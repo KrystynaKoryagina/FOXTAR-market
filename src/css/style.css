@@ -643,7 +643,7 @@ textarea.form-control {
     margin-left: 40px;
 }
 
-@media(max-width: 991px) {
+@media (max-width: 991px) {
     .user-controls {
         width: 100%;
         margin-top: 30px;
@@ -766,7 +766,8 @@ textarea.form-control {
 }
 
 .newest-products-tabs .nav-link {
-    display: block;
+    display: inline-block;
+    width: 100%;
     padding: 15px 25px;
     font-family: 'robotomedium', sans-serif;
     font-size: .875rem;
@@ -939,29 +940,34 @@ textarea.form-control {
 
 @media (max-width: 991px) {
     .advantage-item {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 }
 /* ==========  Why choose foxtar end========== */ 
 
-/* ========== Become-a-author start ========== */
+/* ========== Become a author start ========== */
 .become-a-author {
     position: relative;
 }
 
 .become-a-author-content {
+    display: inline-block;
+    padding: 75px 59px;
+    width: 655px;
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 70px 58px;
     transform: translate(-50%, -50%);
 }
 
 .become-author-text {
+    display: inline-block;
     max-width: 260px;
-    font-size: 1.6rem;
+    margin-right: 47px;
+    font-size: 1.875rem;
     line-height: 1.2em;
     color: #fff;
+    vertical-align: middle;
 }
 
 .become-author-text span {
@@ -969,32 +975,42 @@ textarea.form-control {
 }
 
 .author-register-btn {
-    padding: 25px 42px;
+    display: inline-block;
+    padding: 23px 42px;
     font-family: 'robotoregular', sans-serif;
     font-size: 1.125rem;
-    white-space: nowrap;
     line-height: 1em;
+    vertical-align: middle;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
     .become-a-author-content {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        max-width: 500px;
+        padding: 35px 15px;
+        text-align: center;
     }
 
     .become-author-text {
-        text-align: center;
+        max-width: 100%;
+        margin-right: 0;
         margin-bottom: 15px;
+        font-size: 1.6rem;
+        text-align: center;
     }
 }
 
 @media (max-width: 767px) {
+    .become-a-author-content {
+        width: 400px;
+    }
+
     .become-author-text {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .author-register-btn {
-        padding: 15px 30px;
+        padding: 15px 20px;
+        font-size: 1rem;
     }
 }
 
@@ -1004,11 +1020,9 @@ textarea.form-control {
     }
 
     .become-a-author-content {
-        padding-left: 20px;
-        padding-right: 20px;
+        width: 300px;
     }
 }
-
 /* ========== Become-a-author end ========== */
 
 /* ==========  Tutorials start========== */ 
