@@ -822,8 +822,7 @@ textarea.form-control {
 }
 
 .newest-products-tabs .nav-link {
-    display: inline-block;
-    width: 100%;
+    display: block;
     padding: 15px 25px;
     font-family: 'robotomedium', sans-serif;
     font-size: .875rem;
@@ -1025,7 +1024,8 @@ textarea.form-control {
 .become-a-author-content {
     display: inline-block;
     padding: 75px 59px;
-    width: 655px;
+    max-width: 655px;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1061,8 +1061,8 @@ textarea.form-control {
 
 @media (max-width: 991px) {
     .become-a-author-content {
-        max-width: 500px;
-        padding: 35px 15px;
+        width: auto;
+        padding: 20px 10px;
         text-align: center;
     }
 
@@ -1076,10 +1076,6 @@ textarea.form-control {
 }
 
 @media (max-width: 767px) {
-    .become-a-author-content {
-        width: 400px;
-    }
-
     .become-author-text {
         font-size: 1.2rem;
     }
@@ -1095,9 +1091,15 @@ textarea.form-control {
         display: none;
     }
 
-    .become-a-author-content {
-        width: 300px;
+    .become-author-text {
+        font-size: 1rem;
     }
+
+    .author-register-btn {
+        padding: 10px 20px;
+        font-size: .75rem;
+    }
+
 }
 /* ========== Become-a-author end ========== */
 
@@ -1271,6 +1273,7 @@ textarea.form-control {
 }
 
 .product-author span {
+    display: block;
     font-family: 'robotobold', sans-serif;
     font-size: 1.25rem;
     line-height: 1em;
@@ -1278,7 +1281,7 @@ textarea.form-control {
 
 .profile-btn {
     display: inline-block;
-    margin-top: 8px;
+    margin-top: 12px;
     padding: 8px 10px;
     font-size: .8125rem;
     line-height: 1em;
@@ -1356,6 +1359,12 @@ textarea.form-control {
 
 .view-wrap i + i {
     margin-left: 12px;
+}
+
+@media (max-width: 576px) {
+    .view-wrap i + i {
+        margin-left: 5px;
+    }
 }
 /* ========== View Controls end ========== */
 
